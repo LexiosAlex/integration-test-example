@@ -1,0 +1,10 @@
+.todoSection {
+    padding: 24px;
+    background: #5D3FD3;
+    border-radius: 6px;
+}
+
+.todoSectionTitle {
+    color: #ffffff;
+    padding-bottom: 24px;
+}

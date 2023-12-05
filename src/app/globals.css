@@ -100,6 +100,26 @@ a {
   text-decoration: none;
 }
 
+button {
+  background: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+input {
+  padding: 8px;
+  border: none;
+}
+
+li {
+  display: block;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

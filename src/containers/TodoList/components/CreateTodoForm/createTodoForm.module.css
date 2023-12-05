@@ -1,0 +1,20 @@
+.addFormItem {
+    display: flex;
+    border-radius: 2px;
+    overflow: auto;
+}
+
+.addFormButton {
+    display: flex;
+    color: #ffffff;
+    background: #191970;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+
+.addFormInput {
+    width: 100%;
+    font-size: 16px;
+    padding-left: 12px;
+}

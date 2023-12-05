@@ -1,0 +1,17 @@
+.todoItemCard {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 12px 0;
+  padding: 4px 4px 4px 12px;
+
+  border-radius: 2px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.todoItemCross {
+  cursor: pointer;
+  margin-left: 8px;
+}
