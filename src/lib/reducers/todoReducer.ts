@@ -46,7 +46,7 @@ const todoSlice = createSlice<TodoState, any>({
     builder.addCase(removeTodoById.fulfilled, (state, action) => {
       state.todos = state.todos.filter(({id}) => id !== action.meta.arg)
     });
-    builder.addCase(addTodo.pending, (state, action) => {
+    builder.addCase(addTodo.pending, (state, _) => {
       state.isTodoAddLoading = true;
     });
     builder.addCase(addTodo.fulfilled, (state, action) => {
