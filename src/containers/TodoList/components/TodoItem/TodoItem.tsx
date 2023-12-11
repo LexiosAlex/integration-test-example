@@ -1,7 +1,6 @@
 import styles from "./todoItem.module.css";
-import { todoActions } from "@/lib/reducers/todoReducer";
+import { useRemoveTodoQueryMutation } from "@/lib/reducers/todoReducer";
 import React from "react";
-import { useAppDispatch } from "@/lib/hooks";
 import Image from "next/image";
 
 type TodoItemProps = {
@@ -10,10 +9,10 @@ type TodoItemProps = {
 };
 
 export const TodoItem = ({ title, id }: TodoItemProps) => {
-  const dispatch = useAppDispatch();
+  const [removeTodo] = useRemoveTodoQueryMutation();
 
   const handleRemove = () => {
-    dispatch(todoActions.removeTodoById(id));
+    removeTodo(id);
   };
 
   return (
